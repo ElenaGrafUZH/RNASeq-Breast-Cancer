@@ -1,0 +1,12 @@
+HER21	./reads/HER21_R1.fastq.gz	./reads/HER21_R2.fastq.gz
+HER22	./reads/HER22_R1.fastq.gz	./reads/HER22_R2.fastq.gz
+HER23	./reads/HER23_R1.fastq.gz	./reads/HER23_R2.fastq.gz
+NonTNBC1	./reads/NonTNBC1_R1.fastq.gz	./reads/NonTNBC1_R2.fastq.gz
+NonTNBC2	./reads/NonTNBC2_R1.fastq.gz	./reads/NonTNBC2_R2.fastq.gz
+NonTNBC3	./reads/NonTNBC3_R1.fastq.gz	./reads/NonTNBC3_R2.fastq.gz
+Normal1	./reads/Normal1_R1.fastq.gz	./reads/Normal1_R2.fastq.gz
+Normal2	./reads/Normal2_R1.fastq.gz	./reads/Normal2_R2.fastq.gz
+Normal3	./reads/Normal3_R1.fastq.gz	./reads/Normal3_R2.fastq.gz
+TNBC1	./reads/TNBC1_R1.fastq.gz	./reads/TNBC1_R2.fastq.gz
+TNBC2	./reads/TNBC2_R1.fastq.gz	./reads/TNBC2_R2.fastq.gz
+TNBC3	./reads/TNBC3_R1.fastq.gz	./reads/TNBC3_R2.fastq.gz

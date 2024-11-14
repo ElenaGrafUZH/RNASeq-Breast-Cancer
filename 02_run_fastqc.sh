@@ -1,28 +1,34 @@
 #!/bin/bash
 
 #*----------Cluster specification----------
-#SBATCH --mail-type=fail
 #SBATCH --job-name="02_fastqc"
-#SBATCH --nodes=1
+#SBATCH --array=1-12
+#SBATCH --mail-type=fail
 #SBATCH --cpus-per-task=1
-#SBATCH --time=1:00:00
-#SBATCH --mem=1000
+#SBATCH --time=01:00:00
+#SBATCH --mem=1g
+#SBATCH --output=/data/users/egraf/RNASeq/log/array_%J.out
+#SBATCH --error=/data/users/egraf/RNASeq/log/array_%J.err
 #SBATCH --partition=pibu_el8
 
 #*----------Variables----------
 USER='egraf'
-OUTPUTFOLDER=/data/users/${USER}/RNAseq/1_fastqc
+WORKDIR="/data/users/${USER}/RNAseq"
+OUTDIR="${WORKDIR}/1_fastqc"
+SAMPLELIST="${WORKDIR}/metadata/samplelist.tsv"
 READSPATH=/data/courses/rnaseq_course/breastcancer_de/reads
 CONTAINERFASTQC=/containers/apptainer/fastqc-0.12.1.sif
 
+SAMPLE=`awk -v line=$SLURM_ARRAY_TASK_ID 'NR==line{print $1; exit}' $SAMPLELIST`
+READ1=`awk -v line=$SLURM_ARRAY_TASK_ID 'NR==line{print $2; exit}' $SAMPLELIST`
+READ2=`awk -v line=$SLURM_ARRAY_TASK_ID 'NR==line{print $3; exit}' $SAMPLELIST`
+
+OUTFILE="$OUTDIR/${SAMPLE}.txt"
+
 #*----------Load apptainer container for modules----------
-#apptainer run ubuntu-figlet_v3.sif
-#apptainer exec --bind bla.sif
+mkdir -p "${OUTDIR}/${SAMPLE}"
+
+apptainer exec --bind ${READSPATH} ${CONTAINERFASTQC} fastqc -t 1 -o "${OUTDIR}/${SAMPLE}" ${READ1}
+apptainer exec --bind ${READSPATH} ${CONTAINERFASTQC} fastqc -t 1 -o "${OUTDIR}/${SAMPLE}" ${READ2}
 
 
-# check quality of reads
-# for k in `ls -1 reads/*.fastq.gz`; 
-# do fastqc -t 2 ${k} > ${OUTPUTFOLDER};
-# done
-INPUTFILE=reads/HER21_R1.fastq.gz
-apptainer exec --bind ${READSPATH} ${CONTAINERFASTQC} fastqc -t 2 -o ${OUTPUTFOLDER} ${INPUTFILE}
