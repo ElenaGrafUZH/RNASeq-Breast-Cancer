@@ -1,0 +1,21 @@
+44557641 reads; of these:
+  44557641 (100.00%) were paired; of these:
+    5614585 (12.60%) aligned concordantly 0 times
+    19075331 (42.81%) aligned concordantly exactly 1 time
+    19867725 (44.59%) aligned concordantly >1 times
+    ----
+    5614585 pairs aligned concordantly 0 times; of these:
+      366857 (6.53%) aligned discordantly 1 time
+    ----
+    5247728 pairs aligned 0 times concordantly or discordantly; of these:
+      10495456 mates make up the pairs; of these:
+        4765961 (45.41%) aligned 0 times
+        2713444 (25.85%) aligned exactly 1 time
+        3016051 (28.74%) aligned >1 times
+94.65% overall alignment rate
+Mapping reads to reference genome completed for NonTNBC2
+Converting sam to bam completed for NonTNBC2
+sam file removed for NonTNBC2
+[bam_sort_core] merging from 0 files and 32 in-memory blocks...
+Sorting bam files completed for NonTNBC2
+Indexing bam files completed for NonTNBC2

@@ -1,0 +1,19 @@
+53896173 reads; of these:
+  53896173 (100.00%) were paired; of these:
+    2957159 (5.49%) aligned concordantly 0 times
+    24434386 (45.34%) aligned concordantly exactly 1 time
+    26504628 (49.18%) aligned concordantly >1 times
+    ----
+    2957159 pairs aligned concordantly 0 times; of these:
+      84058 (2.84%) aligned discordantly 1 time
+    ----
+    2873101 pairs aligned 0 times concordantly or discordantly; of these:
+      5746202 mates make up the pairs; of these:
+        2828018 (49.22%) aligned 0 times
+        1182071 (20.57%) aligned exactly 1 time
+        1736113 (30.21%) aligned >1 times
+97.38% overall alignment rate
+Mapping reads to reference genome completed for HER21
+Converting sam to bam completed for HER21
+sam file removed for HER21
+slurmstepd: error: *** JOB 13790598 ON binfservas31 CANCELLED AT 2024-12-06T06:09:24 DUE TO TIME LIMIT ***

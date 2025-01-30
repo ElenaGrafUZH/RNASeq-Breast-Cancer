@@ -1,0 +1,20 @@
+47293675 reads; of these:
+  47293675 (100.00%) were paired; of these:
+    6114648 (12.93%) aligned concordantly 0 times
+    20307203 (42.94%) aligned concordantly exactly 1 time
+    20871824 (44.13%) aligned concordantly >1 times
+    ----
+    6114648 pairs aligned concordantly 0 times; of these:
+      414706 (6.78%) aligned discordantly 1 time
+    ----
+    5699942 pairs aligned 0 times concordantly or discordantly; of these:
+      11399884 mates make up the pairs; of these:
+        5182949 (45.46%) aligned 0 times
+        2982433 (26.16%) aligned exactly 1 time
+        3234502 (28.37%) aligned >1 times
+94.52% overall alignment rate
+Mapping reads to reference genome completed for NonTNBC3
+Converting sam to bam completed for NonTNBC3
+sam file removed for NonTNBC3
+[bam_sort_core] merging from 0 files and 32 in-memory blocks...
+slurmstepd: error: *** JOB 13790849 ON binfservas39 CANCELLED AT 2024-12-06T06:46:23 DUE TO TIME LIMIT ***

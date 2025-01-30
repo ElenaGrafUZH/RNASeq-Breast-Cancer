@@ -1,0 +1,21 @@
+35631676 reads; of these:
+  35631676 (100.00%) were paired; of these:
+    1658384 (4.65%) aligned concordantly 0 times
+    32497084 (91.20%) aligned concordantly exactly 1 time
+    1476208 (4.14%) aligned concordantly >1 times
+    ----
+    1658384 pairs aligned concordantly 0 times; of these:
+      252967 (15.25%) aligned discordantly 1 time
+    ----
+    1405417 pairs aligned 0 times concordantly or discordantly; of these:
+      2810834 mates make up the pairs; of these:
+        1391897 (49.52%) aligned 0 times
+        1283534 (45.66%) aligned exactly 1 time
+        135403 (4.82%) aligned >1 times
+98.05% overall alignment rate
+Mapping reads to reference genome completed for Normal3
+Converting sam to bam completed for Normal3
+sam file removed for Normal3
+[bam_sort_core] merging from 0 files and 32 in-memory blocks...
+Sorting bam files completed for Normal3
+Indexing bam files completed for Normal3

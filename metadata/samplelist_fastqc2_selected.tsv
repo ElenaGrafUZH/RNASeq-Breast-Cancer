@@ -1,0 +1,7 @@
+HER21	./1_1_fastp/HER21_1.fastq.gz	./1_1_fastp/HER21_2.fastq.gz
+HER22	./1_1_fastp/HER22_1.fastq.gz	./1_1_fastp/HER22_2.fastq.gz
+HER23	./1_1_fastp/HER23_1.fastq.gz	./1_1_fastp/HER23_2.fastq.gz
+NonTNBC1	./1_1_fastp/NonTNBC1_1.fastq.gz	./1_1_fastp/NonTNBC1_2.fastq.gz
+NonTNBC3	./1_1_fastp/NonTNBC3_1.fastq.gz	./1_1_fastp/NonTNBC3_2.fastq.gz
+TNBC2	./1_1_fastp/TNBC2_1.fastq.gz	./1_1_fastp/TNBC2_2.fastq.gz
+TNBC3	./1_1_fastp/TNBC3_1.fastq.gz	./1_1_fastp/TNBC3_2.fastq.gz

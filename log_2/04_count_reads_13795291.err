@@ -1,0 +1,134 @@
+WARNING: Skipping mount /var/lib/apptainer/mnt/session/etc/resolv.conf [files]: /etc/resolv.conf doesn't exist in container
+
+        ==========     _____ _    _ ____  _____  ______          _____  
+        =====         / ____| |  | |  _ \|  __ \|  ____|   /\   |  __ \ 
+          =====      | (___ | |  | | |_) | |__) | |__     /  \  | |  | |
+            ====      \___ \| |  | |  _ <|  _  /|  __|   / /\ \ | |  | |
+              ====    ____) | |__| | |_) | | \ \| |____ / ____ \| |__| |
+        ==========   |_____/ \____/|____/|_|  \_\______/_/    \_\_____/
+	  v2.0.1
+
+//========================== featureCounts setting ===========================\\
+||                                                                            ||
+||             Input files : 12 BAM files                                     ||
+||                           o HER21_sorted.bam                               ||
+||                           o HER22_sorted.bam                               ||
+||                           o HER23_sorted.bam                               ||
+||                           o NonTNBC1_sorted.bam                            ||
+||                           o NonTNBC2_sorted.bam                            ||
+||                           o NonTNBC3_sorted.bam                            ||
+||                           o Normal1_sorted.bam                             ||
+||                           o Normal2_sorted.bam                             ||
+||                           o Normal3_sorted.bam                             ||
+||                           o TNBC1_sorted.bam                               ||
+||                           o TNBC2_sorted.bam                               ||
+||                           o TNBC3_sorted.bam                               ||
+||                                                                            ||
+||             Output file : featureCounts_table.txt                          ||
+||                 Summary : featureCounts_table.txt.summary                  ||
+||              Annotation : Homo_sapiens.GRCh38.113.gtf (GTF)                ||
+||      Dir for temp files : /data/users/egraf/RNAseq/7_featurecounts         ||
+||                                                                            ||
+||                 Threads : 8                                                ||
+||                   Level : meta-feature level                               ||
+||              Paired-end : yes                                              ||
+||      Multimapping reads : not counted                                      ||
+|| Multi-overlapping reads : not counted                                      ||
+||   Min overlapping bases : 1                                                ||
+||                                                                            ||
+||          Chimeric reads : not counted                                      ||
+||        Both ends mapped : not required                                     ||
+||                                                                            ||
+\\============================================================================//
+
+//================================= Running ==================================\\
+||                                                                            ||
+|| Load annotation file Homo_sapiens.GRCh38.113.gtf ...                       ||
+||    Features : 2164410                                                      ||
+||    Meta-features : 78932                                                   ||
+||    Chromosomes/contigs : 70                                                ||
+||                                                                            ||
+|| Load FASTA contigs from Homo_sapiens.GRCh38.dna.primary_assembly.fa...     ||
+||    193 contigs were loaded                                                 ||
+||                                                                            ||
+|| Process BAM file HER21_sorted.bam...                                       ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 154246017                                            ||
+||    Successfully assigned alignments : 10651308 (6.9%)                      ||
+||    Running time : 22.32 minutes                                            ||
+||                                                                            ||
+|| Process BAM file HER22_sorted.bam...                                       ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 143086818                                            ||
+||    Successfully assigned alignments : 14342789 (10.0%)                     ||
+||    Running time : 18.97 minutes                                            ||
+||                                                                            ||
+|| Process BAM file HER23_sorted.bam...                                       ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 135893257                                            ||
+||    Successfully assigned alignments : 10816941 (8.0%)                      ||
+||    Running time : 18.01 minutes                                            ||
+||                                                                            ||
+|| Process BAM file NonTNBC1_sorted.bam...                                    ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 146827561                                            ||
+||    Successfully assigned alignments : 19824186 (13.5%)                     ||
+||    Running time : 20.02 minutes                                            ||
+||                                                                            ||
+|| Process BAM file NonTNBC2_sorted.bam...                                    ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 124085191                                            ||
+||    Successfully assigned alignments : 11056139 (8.9%)                      ||
+||    Running time : 14.66 minutes                                            ||
+||                                                                            ||
+|| Process BAM file NonTNBC3_sorted.bam...                                    ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 130440483                                            ||
+||    Successfully assigned alignments : 11787972 (9.0%)                      ||
+||    Running time : 15.94 minutes                                            ||
+||                                                                            ||
+|| Process BAM file Normal1_sorted.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 18212721                                             ||
+||    Successfully assigned alignments : 11729216 (64.4%)                     ||
+||    Running time : 0.34 minutes                                             ||
+||                                                                            ||
+|| Process BAM file Normal2_sorted.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 36017615                                             ||
+||    Successfully assigned alignments : 25052871 (69.6%)                     ||
+||    Running time : 0.56 minutes                                             ||
+||                                                                            ||
+|| Process BAM file Normal3_sorted.bam...                                     ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 39155402                                             ||
+||    Successfully assigned alignments : 29938821 (76.5%)                     ||
+||    Running time : 0.56 minutes                                             ||
+||                                                                            ||
+|| Process BAM file TNBC1_sorted.bam...                                       ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 92661311                                             ||
+||    Successfully assigned alignments : 10534812 (11.4%)                     ||
+||    Running time : 9.52 minutes                                             ||
+||                                                                            ||
+|| Process BAM file TNBC2_sorted.bam...                                       ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 121632842                                            ||
+||    Successfully assigned alignments : 8517752 (7.0%)                       ||
+||    Running time : 19.93 minutes                                            ||
+||                                                                            ||
+|| Process BAM file TNBC3_sorted.bam...                                       ||
+||    Paired-end reads are included.                                          ||
+||    Total alignments : 124014823                                            ||
+||    Successfully assigned alignments : 9320420 (7.5%)                       ||
+||    Running time : 21.64 minutes                                            ||
+||                                                                            ||
+|| Write the final count table.                                               ||
+|| Write the read assignment summary.                                         ||
+||                                                                            ||
+|| Summary of counting results can be found in file "/data/users/egraf/RNAse  ||
+|| q/7_featurecounts/featureCounts_table.txt.summary"                         ||
+||                                                                            ||
+\\============================================================================//
+
+featureCount completed

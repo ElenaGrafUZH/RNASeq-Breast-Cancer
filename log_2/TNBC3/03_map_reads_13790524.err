@@ -1,0 +1,17 @@
+41496522 reads; of these:
+  41496522 (100.00%) were paired; of these:
+    7049823 (16.99%) aligned concordantly 0 times
+    15183210 (36.59%) aligned concordantly exactly 1 time
+    19263489 (46.42%) aligned concordantly >1 times
+    ----
+    7049823 pairs aligned concordantly 0 times; of these:
+      397404 (5.64%) aligned discordantly 1 time
+    ----
+    6652419 pairs aligned 0 times concordantly or discordantly; of these:
+      13304838 mates make up the pairs; of these:
+        5596082 (42.06%) aligned 0 times
+        3053476 (22.95%) aligned exactly 1 time
+        4655280 (34.99%) aligned >1 times
+93.26% overall alignment rate
+Mapping reads to reference genome completed for TNBC3
+slurmstepd: error: *** JOB 13790524 ON binfservas39 CANCELLED AT 2024-12-06T09:27:53 DUE TO TIME LIMIT ***
