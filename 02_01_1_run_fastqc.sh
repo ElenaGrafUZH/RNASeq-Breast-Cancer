@@ -7,8 +7,8 @@
 #SBATCH --cpus-per-task=1
 #SBATCH --time=01:00:00
 #SBATCH --mem=1g
-#SBATCH --output=/data/users/egraf/RNASeq/log/array_%J.out
-#SBATCH --error=/data/users/egraf/RNASeq/log/array_%J.err
+#SBATCH --output=/data/users/egraf/RNAseq/log/array_%J.out
+#SBATCH --error=/data/users/egraf/RNAseq/log/array_%J.err
 #SBATCH --partition=pibu_el8
 
 #*----------Variables----------
@@ -23,12 +23,11 @@ SAMPLE=`awk -v line=$SLURM_ARRAY_TASK_ID 'NR==line{print $1; exit}' $SAMPLELIST`
 READ1=`awk -v line=$SLURM_ARRAY_TASK_ID 'NR==line{print $2; exit}' $SAMPLELIST`
 READ2=`awk -v line=$SLURM_ARRAY_TASK_ID 'NR==line{print $3; exit}' $SAMPLELIST`
 
-OUTFILE="$OUTDIR/${SAMPLE}.txt"
 
 #*----------Load apptainer container for modules----------
-mkdir -p "${OUTDIR}/${SAMPLE}"
+mkdir -p ${OUTDIR}
 
-apptainer exec --bind ${READSPATH} ${CONTAINERFASTQC} fastqc -t 1 -o "${OUTDIR}/${SAMPLE}" ${READ1}
-apptainer exec --bind ${READSPATH} ${CONTAINERFASTQC} fastqc -t 1 -o "${OUTDIR}/${SAMPLE}" ${READ2}
+apptainer exec --bind ${READSPATH} ${CONTAINERFASTQC} fastqc -t 1 -o ${OUTDIR} ${READ1}
+apptainer exec --bind ${READSPATH} ${CONTAINERFASTQC} fastqc -t 1 -o ${OUTDIR} ${READ2}
 
 
