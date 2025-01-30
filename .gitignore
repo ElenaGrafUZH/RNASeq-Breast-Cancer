@@ -2,3 +2,5 @@
 /slurm-13479883.out
 /slurm-13479900.out
 /reads
+/metadata/checksum_fasta
+/metadata/checksum_gtf
