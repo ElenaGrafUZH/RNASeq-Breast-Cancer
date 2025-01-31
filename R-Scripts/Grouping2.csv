@@ -1,0 +1,13 @@
+﻿Sample,Group,Group2
+HER21,HER2,breastCancer
+HER22,HER2,breastCancer
+HER23,HER2,breastCancer
+NonTNBC1,NonTNBC,breastCancer
+NonTNBC2,NonTNBC,breastCancer
+NonTNBC3,NonTNBC,breastCancer
+TNBC1,TNBC,breastCancer
+TNBC2,TNBC,breastCancer
+TNBC3,TNBC,breastCancer
+Normal1,Normal,healthy
+Normal2,Normal,healthy
+Normal3,Normal,healthy
